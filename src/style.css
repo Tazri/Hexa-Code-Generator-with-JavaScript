@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: crimson;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
+    background: black;
+    color: crimson;
+    font-size: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s linear;
+}
+
+button:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+button:active{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.color-code{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+::selection{
+    background: none;
+}
+
+#copy-btn{
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    transform: scale(1);
+}
+
+#copy-btn:active{
+    transform: scale(1.2);
+}
